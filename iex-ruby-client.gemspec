@@ -1,4 +1,4 @@
-$LOAD_PATH.push File.expand_path('../lib', __FILE__)
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 require 'iex/version'
 
 Gem::Specification.new do |s|
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'faraday', '>= 0.9'
   s.add_dependency 'faraday_middleware'
   s.add_dependency 'hashie'
+  s.add_dependency 'money_helper'
   s.add_development_dependency 'rake', '~> 10'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rubocop', '0.51.0'

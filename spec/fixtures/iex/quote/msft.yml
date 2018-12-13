@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.14.0
+      - Faraday v0.15.1
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,28 +21,32 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 23 Mar 2018 15:15:57 GMT
+      - Sat, 26 May 2018 22:44:50 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '836'
+      - '912'
       Connection:
       - keep-alive
       Set-Cookie:
-      - ctoken=d3f239a37b4141acbf609e8663f3302a; Domain=.iextrading.com; Path=/; Expires=Sat,
-        24 Mar 2018 03:15:57 GMT; Secure
+      - ctoken=b25c6a137426493aa77de4345b947c48; Domain=.iextrading.com; Path=/; Expires=Sun,
+        27 May 2018 10:44:50 GMT; Secure
       Content-Security-Policy:
       - default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self'
-        'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com
-        wss://iextrading.com wss://tops.iextrading.com; script-src 'self';
+        'unsafe-inline'; font-src data:; frame-src 'self'; connect-src 'self' https://auth.iextrading.com
+        https://api.iextrading.com https://api.iextrading.com wss://iextrading.com
+        wss://tops.iextrading.com wss://api.iextrading.com wss://iextrading.com; script-src
+        'self' 'unsafe-inline' 'unsafe-eval';
       X-Content-Security-Policy:
       - default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self'
-        'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com
-        wss://iextrading.com wss://tops.iextrading.com; script-src 'self';
+        'unsafe-inline'; font-src data:; frame-src 'self'; connect-src 'self' https://auth.iextrading.com
+        https://api.iextrading.com https://api.iextrading.com wss://iextrading.com
+        wss://tops.iextrading.com wss://api.iextrading.com wss://iextrading.com; script-src
+        'self' 'unsafe-inline' 'unsafe-eval';
       Frame-Options:
-      - deny
+      - SAMEORIGIN
       X-Frame-Options:
-      - deny
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Strict-Transport-Security:
@@ -58,8 +62,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"symbol":"MSFT","companyName":"Microsoft Corporation","primaryExchange":"Nasdaq
-        Global Select","sector":"Technology","calculationPrice":"tops","open":89.45,"openTime":1521811800352,"close":89.79,"closeTime":1521748800315,"high":90.46,"low":89.161,"latestPrice":90.165,"latestSource":"IEX
-        real time price","latestTime":"11:15:45 AM","latestUpdate":1521818145007,"latestVolume":10015072,"iexRealtimePrice":90.165,"iexRealtimeSize":200,"iexLastUpdated":1521818145007,"delayedPrice":90.34,"delayedPriceTime":1521817252749,"previousClose":89.79,"change":0.375,"changePercent":0.00418,"iexMarketPercent":0.03178,"iexVolume":318279,"avgTotalVolume":32176892,"iexBidPrice":89.8,"iexBidSize":100,"iexAskPrice":92.31,"iexAskSize":100,"marketCap":694251822501,"peRatio":27.32,"week52High":97.24,"week52Low":64.35,"ytdChange":0.049583743433526506}'
+        Global Select","sector":"Technology","calculationPrice":"close","open":98.3,"openTime":1527255000372,"close":98.36,"closeTime":1527278400376,"high":null,"low":null,"latestPrice":98.36,"latestSource":"Close","latestTime":"May
+        25, 2018","latestUpdate":1527278400376,"latestVolume":17944712,"iexRealtimePrice":null,"iexRealtimeSize":null,"iexLastUpdated":null,"delayedPrice":98.36,"delayedPriceTime":1527281515371,"extendedPrice":98.48,"extendedChange":0.12,"extendedChangePercent":0.00122,"extendedPriceTime":1527281940950,"previousClose":98.31,"change":0.05,"changePercent":0.00051,"iexMarketPercent":null,"iexVolume":null,"avgTotalVolume":25656536,"iexBidPrice":null,"iexBidSize":null,"iexAskPrice":null,"iexAskSize":null,"marketCap":755719306395,"peRatio":29.1,"week52High":98.98,"week52Low":68.02,"ytdChange":0.15474471407271742}'
     http_version: 
-  recorded_at: Fri, 23 Mar 2018 15:15:57 GMT
+  recorded_at: Sat, 26 May 2018 22:44:50 GMT
 recorded_with: VCR 4.0.0
